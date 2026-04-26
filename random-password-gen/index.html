@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="icon" href="https://cdn.vectorstock.com/i/1000v/10/06/lock-icon-flat-style-isolated-vector-28331006.jpg">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+
+  <h1>Random Password Generator</h1>
+
+<div class="pass-container">
+    <input type="text" id="generatedPassword" placeholder="Generated password" disabled>
+
+    <input type="number" id="length" placeholder="Enter the number of characters">
+    <br>
+
+    <label>
+        <input type="checkbox" id="lowercase">
+        Include Lowercase Letters
+    </label>
+
+    <label>
+        <input type="checkbox" id="uppercase" >
+        Include Uppercase Letters
+    </label>
+
+    <label>
+        <input type="checkbox" id="numbers">
+        Include Numbers
+    </label>
+
+    <label>
+        <input type="checkbox" id="symbols">
+        Include Symbols
+    </label>
+</div>
+</body>
+</html>
