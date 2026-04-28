@@ -19,6 +19,7 @@ body div {
     width: 400px;
     border-radius: 15px;
     display: flex;
+    gap: 15px;
     /* flex-direction: column; */
 }
 
@@ -49,17 +50,32 @@ body div {
 button {
     background-color: #fff;
     color: black;
+    border-radius: 15px;
     height: 30px;
     padding: 3px;
 }
 
+table {
+    background-color: #252339;
 
+}
+
+.week-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    width: 100%;
+}
 
 .week-container tr {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 6px;
     padding: 1px;
+    margin-block: 5px;
 }
 
 .week-container thead th {
@@ -71,11 +87,20 @@ button {
 }
 
 .day-cell {
-    background-color: #fff;
+    background-color: #ffffff5f;
     color: black;
     height: 30px;
     width: 45px;
     text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-cell:hover {
+    background-color: #ffffff;
+    cursor: pointer;
 }
 
 
@@ -85,4 +110,13 @@ button {
 
 .blank-date {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.today-btn {
+    background-color: blue;
+    color: white;
+}
+
+.today-cell {
+    background-color: #fff;
 }

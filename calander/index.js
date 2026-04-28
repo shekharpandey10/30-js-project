@@ -5,19 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const leftBtn = document.querySelector('.left-btn')
     const rightBtn = document.querySelector('.right-btn')
     const dateBody = document.querySelector('.table-body')
+    const today = document.querySelector('.today')
 
     const months = [
         'January', 'February', 'March', 'April', 'May', 'June',
         'July', 'August', 'September', 'October', 'November', 'December'
     ];
 
-    const currentDate = new Date()
-    let currentMonth = currentDate.getMonth();
-    let currentYear = currentDate.getFullYear()
+    const getTimeAndDate = () => {
+        const currentDate = new Date()
+        let currentMonth = currentDate.getMonth();
+        let currentYear = currentDate.getFullYear();
+        let todayDay = currentDate.getDate()
+        return { currentMonth, currentYear, todayDay }
+    }
+    let { currentMonth, currentYear, todayDay } = getTimeAndDate()
 
 
-    monthContainer.textContent = `${months[currentMonth]} ${currentYear}`
-    const renderCalander = (month, year) => {
+    // monthContainer.textContent = `${months[currentMonth]} ${currentYear}`
+    const renderCalander = (month, year, day = null) => {
 
         monthContainer.textContent = `${months[month]} ${year}`
         dateBody.innerHTML = ''
@@ -41,6 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
             td.classList.add('day-cell')
 
             td.textContent = i
+            if (day && i === day) {
+                td.classList.add('today-cell')
+            }
             tr.append(td)
             colCount++
         }
@@ -51,7 +60,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+    today.addEventListener('click', () => {
 
+        const { currentMonth, currentYear, todayDay } = getTimeAndDate()
+
+        renderCalander(currentMonth, currentYear, todayDay)
+    })
 
     leftBtn.addEventListener('click', () => {
         if (currentMonth === 0) {
@@ -72,6 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     })
 
-    renderCalander(currentMonth, currentYear)
+    renderCalander(currentMonth, currentYear, todayDay)
 
 })
