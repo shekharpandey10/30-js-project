@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form</title>
+    <link rel="icon" href="https://cdn-icons-png.freepik.com/256/17384/17384653.png">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="header-container">
+            <h class="">Dynamic Form Field</h1>
+        </div>
+        <div class="body-container">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="text" placeholder="Another Field">
+
+        </div>
+        <div class="button-container">
+            <button class="remove-btn">Remove</button>
+            <button class="add-btn">Add</button>
+        </div>
+
+    </div>
+
+    <div class="overlay">
+        <div class="dialog">
+            <div class="overlay-heading">
+                <h1>Add Form</h1>
+                <button>X</button>
+            </div>
+            <div>
+                <input type="text" name="title" placeholder="Add title" id="title">
+                <div>
+                    <select name="fieldType">
+                        <option value="email">Email</option>
+                        <option value="name">Name</option>
+                        <option value="number">Number</option>
+                        <option value="tel">Phone</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="add-btn">Add</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
