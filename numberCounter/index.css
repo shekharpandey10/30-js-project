@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #19172E;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 20px;
+    height: 80%;
+}
+
+.main-container div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    /* width: 100%; */
+}
+
+button {
+    padding: 10px;
+    background-color: #5c5a5a;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2f2e2e;
+
+}
+
+.counter-box {
+    height: 100px;
+    width: 50%;
+    background-color: #252339;
+    border-radius: 15px;
+    position: relative;
+}
+
+.counter-box div {
+    font-size: 3rem;
+}
+
+.counter-box button:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+}
+
+.counter-box button:nth-child(3) {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+}
+
+.counter-box button:hover {
+    background-color: #aba7a7;
+}
+
+.footer {
+
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.saved-number {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    overflow-y: auto;
+}
+
+.clear-btn {
+    height: 10%;
+    align-self: center;
+}
