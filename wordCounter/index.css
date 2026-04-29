@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #19172E;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+}
+
+
+.textfield {
+    background-color: #fff;
+    color: black;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+
+.footer {
+
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+
+}
