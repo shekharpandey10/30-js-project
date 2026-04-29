@@ -41,6 +41,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    height: 350px;
+    overflow-y: auto;
 }
 
 input {
@@ -89,6 +91,18 @@ input {
     display: none;
 }
 
+.overlay-on {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.14);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+}
+
 .dialog {
     display: flex;
     justify-content: center;
@@ -115,4 +129,22 @@ input {
     border: none;
     font-size: medium;
 
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: aliceblue;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
