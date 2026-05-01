@@ -22,7 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     span.style.backgroundColor = getRandomColor()
                 })
                 span.addEventListener('mouseleave', () => {
-                    span.style.backgroundColor = ''
+
+
+                    setTimeout(() => {
+                        span.style.backgroundColor = ''
+                    }, 1000);
                 })
                 div.append(span)
             }
