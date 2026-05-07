@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+
+#canvas {
+    background: linear-gradient(to right, purple, blue);
+    display: block;
+    height: 100vh;
+}
+
+#cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    background-color: #000;
+    height: 5px;
+    width: 5px;
+    font-size: 30px;
+}
