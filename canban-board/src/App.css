@@ -1,0 +1,6 @@
+.App {
+  min-height: 100vh;
+  color: burlywood;
+  display: flex;
+  justify-content: center;
+}

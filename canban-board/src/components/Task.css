@@ -1,0 +1,40 @@
+.Task {
+    background: wheat;
+    border-radius: 4px;
+    min-height: 5rem;
+    color: black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.PLANNER {
+    font-size: small;
+    background-color: purple;
+    color: white;
+    border-radius: 15px;
+    padding: 8px;
+    text-align: end;
+    display: inline-block;
+}
+
+.ONGOING {
+    font-size: small;
+    background-color: rgb(188, 84, 4);
+    color: white;
+    border-radius: 15px;
+    padding: 8px;
+    text-align: end;
+    display: inline-block;
+}
+
+.DONE {
+    font-size: small;
+    background-color: gray;
+    color: white;
+    border-radius: 15px;
+    padding: 8px;
+    text-align: end;
+    display: inline-block;
+}
