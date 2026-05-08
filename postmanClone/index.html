@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postman</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoZAPhkIP75IVa4trptoEfFlzk-0KFEm0ibg&s">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoZAPhkIP75IVa4trptoEfFlzk-0KFEm0ibg&s"
+                alt="postman-logo" height="50">
+        </a>
+        <ul>
+            <a href="./index.html">
+                <li>Home</li>
+            </a>
+            <a href="https://github.com/shekharpandey10">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </header>
+
+    <main class="container">
+        <h1>Get/Post Your Request</h1>
+
+        <!-- URL Input -->
+        <div class="form-group">
+            <label for="url">Enter Your URL</label>
+            <input type="text" id="url" name="url" placeholder="Type or paste the URL">
+        </div>
+
+        <!-- Request Type -->
+        <div class="form-group">
+            <p>Request Type</p>
+
+            <label for="get">
+                <input type="radio" id="get" name="requestType" value="GET" checked>
+                GET
+            </label>
+
+            <label for="post">
+                <input type="radio" id="post" name="requestType" value="POST">
+                POST
+            </label>
+        </div>
+
+        <!-- Content Type -->
+        <div class="form-group">
+            <p>Content Type</p>
+
+            <label for="json">
+                <input type="radio" id="json" name="contentType" value="JSON" checked>
+                JSON
+            </label>
+
+            <label for="params">
+                <input type="radio" id="params" name="contentType" value="Custom Parameters">
+                Custom Parameters
+            </label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit">
+            Send Request
+        </button>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
