@@ -29,6 +29,13 @@ const empControllerCreate = async (req, res) => {
     try {
         const { name, email, designation, empId } = req.body
         console.log(req.body)
+        const emp = await Employee.findOne({ where: { email: email } })
+        if (emp.email === email) {
+            return res.status(500).json({
+                success: false,
+                message: 'This employee already exists'
+            })
+        }
 
         const data = await Employee.create({
             name, email, designation, empId
@@ -38,14 +45,14 @@ const empControllerCreate = async (req, res) => {
 
                 success: true,
                 data: data,
-                msg: 'Employee created'
+                message: 'Employee created'
             })
         }
     } catch (error) {
         console.log(error)
         return res.status(500).json({
             success: false,
-            msg: error.message
+            message: error.message
         })
     }
 }
@@ -57,7 +64,7 @@ const empControllerUpdate = async (req, res) => {
         if (!id) {
             return res.status(404).json({
                 success: true,
-                msg: 'id must be provided'
+                message: 'id must be provided'
             })
         }
         const [affectedCount] = await Employee.update({ name, email, designation, empId }, { where: { id } })
@@ -69,7 +76,7 @@ const empControllerUpdate = async (req, res) => {
         return res.status(500).json({
 
             success: false,
-            msg: error.message
+            message: error.message
         })
     }
 
