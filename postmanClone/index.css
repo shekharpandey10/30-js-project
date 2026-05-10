@@ -60,10 +60,18 @@ footer {
 
 }
 
+#response-area {
+    width: 100%;
+    min-height: 150px;
+    resize: none;
+    overflow-y: auto;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    overflow-y: auto;
 }
 
 button {
@@ -71,7 +79,8 @@ button {
     padding: 10px;
 }
 
-input {
+input,
+textarea {
     padding: 10px;
     flex: 1;
 }
