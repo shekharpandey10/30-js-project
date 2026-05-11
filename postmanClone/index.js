@@ -88,10 +88,19 @@ const getParamsData = () => {
 const getApiCall = async (currentUrl) => {
     try {
         responseArea.value = ''
+
         const response = await fetch(currentUrl)
-        const res = await response.json()
         console.log(res)
-        responseArea.value = JSON.stringify(res, null, 2);
+        if (contentType && contentType.includes("application/json")) {
+            // It's JSON: Parse and format it
+            const res = await response.json();
+            responseArea.value = JSON.stringify(res, null, 2);
+        } else {
+            // It's HTML or Text: Use .text() to get the raw string
+            const htmlString = await response.text();
+            responseArea.value = htmlString;
+        }
+
     } catch (error) {
         responseArea.value = JSON.stringify(error)
     }
@@ -132,6 +141,12 @@ const postApiCall = async (type, data, currentUrl) => {
 submit.addEventListener('click', () => {
     let currentUrl = url.value
     if (currentRequestType.toLowerCase() === 'get') {
+        const data = getParamsData();
+        const searchQuery = new URLSearchParams(data).toString()
+        if (searchQuery) {
+            const separator = currentUrl.includes('?') ? '&' : '?';
+            currentUrl = `${currentUrl}${separator}${searchQuery}`;
+        }
         getApiCall(currentUrl)
     } else if (currentRequestType.toLowerCase() === 'post') {
         let data
