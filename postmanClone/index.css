@@ -84,3 +84,9 @@ textarea {
     padding: 10px;
     flex: 1;
 }
+
+.content-type {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
