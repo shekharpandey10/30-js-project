@@ -2,6 +2,7 @@ import CONFIG from "./config.js";
 const searchInput = document.querySelector('#searchMovie')
 const emptyContainer = document.querySelector('.empty-container')
 const mainContainer = document.querySelector('.movie-listing')
+const heading = document.querySelector('.empty-container h1')
 let moviesList = []
 let id = null;
 let timeId;
@@ -32,11 +33,23 @@ const renderInUI = (movieData) => {
 
 const loadMovies = async (searchValue) => {
     try {
+        heading.textContent = 'Loading...'
         const url = `${CONFIG.API_BASE_URL}?apiKey=${CONFIG.MOVIE_API_KEY}&s=${searchValue}`
         const response = await fetch(`${url}`)
         const resp = await response.json()
-        moviesList = resp.Search
-        renderInUI(moviesList)
+        moviesList = resp.Search || []
+        if (moviesList.length > 0) {
+            emptyContainer.style.display = 'none';
+            movieListingContainer.style.display = 'grid';
+
+            renderInUI(moviesList);
+        } else {
+            movieListingContainer.innerHTML = '';
+            movieListingContainer.style.display = 'none';
+
+            emptyContainer.style.display = 'flex';
+            heading.textContent = 'No data Found';
+        }
     } catch (error) {
         console.log(error.message)
     }

@@ -128,11 +128,14 @@ footer a {
     background: rgba(255, 255, 255, 0.9);
     transition: transform 0.5s ease;
     transform: translateY(100%);
+    color: red;
 }
 
 .movie-card:hover .intro {
     transform: translateY(0);
-
+    color: red;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 #searchMovie {
