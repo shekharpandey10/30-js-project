@@ -3,7 +3,19 @@ import './Task.css'
 import classNames from 'classnames'
 function Task({ title, STATUS }) {
     return (
-        <div className='Task'>
+        <div draggable="true" className='Task' onDragOver={(e) => {
+            e.preventDefault()
+            console.log('dragup')
+        }}
+            onDragLeave={(e) => {
+                e.preventDefault()
+                console.log('dragLeave')
+            }}
+            onDrop={(e) => {
+                e.preventDefault();
+                console.log('ondrop')
+            }}
+        >
             <div>
                 {title}
             </div>
