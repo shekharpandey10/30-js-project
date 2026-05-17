@@ -1,0 +1,81 @@
+[
+  {
+    "name": "calander",
+    "localPath": "../calander/index.html",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/calander",
+    "liveUrl": "https://30-js-project-calander.vercel.app/"
+  },
+  {
+    "name": "numberCounter",
+    "localPath": "../numberCounter/index.html",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/numberCounter",
+    "liveUrl": "https://30-js-project-counter.vercel.app/"
+  },
+  {
+    "name": "DynamicForm",
+    "localPath": "../DynamicForm/index.html",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/DynamicForm",
+    "liveUrl": "https://30-js-project-dynamic-form.vercel.app/"
+  },
+  {
+    "name": "waveEffect",
+    "localPath": "../waveEffect/index.html",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/waveEffect",
+    "liveUrl": "https://30-js-project-wave-effect.vercel.app/"
+  },
+  {
+    "name": "wordCounter",
+    "localPath": "../wordCounter/index.html",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/wordCounter",
+    "liveUrl": "https://30-js-projectwordcounter.vercel.app/"
+  },
+  {
+    "name": "Analog-clock",
+    "localPath": "../Analog-clock/index.html",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/Analog-clock",
+    "liveUrl": "https://30-js-project-anlog-clock.vercel.app/"
+  },
+  {
+    "name": "Digital Clock",
+    "localPath": "../Digital Clock/index.html",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/Digital%20Clock",
+    "liveUrl": "https://30-js-project-digital-clock.vercel.app/"
+  },
+  {
+    "name": "Draw_paint",
+    "localPath": "../Draw_paint/index.html",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/Draw_paint",
+    "liveUrl": "https://30-js-project-draw-painting.vercel.app/"
+  },
+  {
+    "name": "MovieSearchApp",
+    "localPath": "../MovieSearchApp/index.html",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/MovieSearchApp",
+    "liveUrl": "https://moviesearchapp-js.netlify.app/",
+    "image": "https://via.placeholder.com/400x220?text=MovieSearchApp"
+  },
+  {
+    "name": "xi",
+    "localPath": "",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/xi",
+    "liveUrl": "https://30-js-project-xi.vercel.app/"
+  },
+  {
+    "name": "formValidation",
+    "localPath": "../formValidation/index.html",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/formValidation",
+    "liveUrl": "https://30-js-project-form-validation.vercel.app/"
+  },
+  {
+    "name": "postmanClone",
+    "localPath": "../postmanClone/index.html",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/postmanClone",
+    "liveUrl": "https://postmanclone-30.netlify.app/"
+  },
+  {
+    "name": "canban-board",
+    "localPath": "../canban-board/index.html",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/canban-board",
+    "liveUrl": "https://canban-board-30-dayjs.netlify.app/"
+  }
+]
