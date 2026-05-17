@@ -110,7 +110,7 @@
     <div id="cards" class="grid" aria-live="polite"></div>
 
     <script>
-        function placeholderImage(name){
+        function placeholderImage(name) {
             const svg = `<?xml version='1.0' encoding='utf-8'?>` +
                 `<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360'>` +
                 `<rect width='100%' height='100%' fill='%23e9e9ef' />` +
@@ -135,9 +135,9 @@
                         <h3>${p.name}</h3>
                         <div class="desc small">${p.githubRepo ? 'Source available on GitHub' : ''}</div>
                         <div class="links">
-                            <a class="btn local" ${p.localPath?`href="${p.localPath}" target="_blank"`:'href="#" onclick="return false;"'}>Local</a>
-                            <a class="btn repo" ${p.githubRepo?`href="${p.githubRepo}" target="_blank"`:'href="#" onclick="return false;"'}>GitHub</a>
-                            <a class="btn live" ${p.liveUrl?`href="${p.liveUrl}" target="_blank"`:'href="#" onclick="return false;"'}>Live</a>
+                            <a class="btn local" ${p.localPath ? `href="${p.localPath}" target="_blank"` : 'href="#" onclick="return false;"'}>Local</a>
+                            <a class="btn repo" ${p.githubRepo ? `href="${p.githubRepo}" target="_blank"` : 'href="#" onclick="return false;"'}>GitHub</a>
+                            <a class="btn live" ${p.liveUrl ? `href="${p.liveUrl}" target="_blank"` : 'href="#" onclick="return false;"'}>Live</a>
                         </div>
                     </div>`;
                 root.appendChild(card);
