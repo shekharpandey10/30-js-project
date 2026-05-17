@@ -55,10 +55,10 @@
     "image": "https://via.placeholder.com/400x220?text=MovieSearchApp"
   },
   {
-    "name": "xi",
-    "localPath": "",
-    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/xi",
-    "liveUrl": "https://30-js-project-xi.vercel.app/"
+    "name": "drumkit",
+    "localPath": "../drumkit/index.html",
+    "githubRepo": "https://github.com/shekharpandey10/30-js-project/tree/main/drumkit",
+    "liveUrl": ""
   },
   {
     "name": "formValidation",
