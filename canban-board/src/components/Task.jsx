@@ -1,26 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Task.css'
 import classNames from 'classnames'
-function Task({ title, STATUS }) {
+import { useStore } from '../store.js'
+function Task({ id, title, STATUS }) {
+    const deleteTask = useStore(state => state.deleteTask)
+    const onDropTask = useStore(state => state.onDropTask)
     return (
-        <div draggable="true" className='Task' onDragOver={(e) => {
-            e.preventDefault()
-            console.log('dragup')
-        }}
-            onDragLeave={(e) => {
-                e.preventDefault()
-                console.log('dragLeave')
-            }}
-            onDrop={(e) => {
-                e.preventDefault();
-                console.log('ondrop')
+        <div draggable="true" className='Task'
+            onDragStart={(e) => {
+                e.dataTransfer.setData('id', id);
+                e.dataTransfer.effectAllowed = 'move';
             }}
         >
             <div>
                 {title}
             </div>
             <div>
-                <div></div>
+                <button onClick={() => deleteTask(id)}>Delete</button>
                 <div className={classNames('status', STATUS)}>{STATUS}</div>
             </div>
         </div>
